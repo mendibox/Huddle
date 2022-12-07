@@ -1,0 +1,42 @@
+body {
+    background-image: url(/images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    font-family: 'Open Sans', Tahoma, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.logo, .empty, .mockups, .text {
+    padding: 10px 40px;
+}
+
+.heading {
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+footer {
+    border: 1px solid black;
+    display: flex;
+    justify-content: right;
+}
+
+.attribution {
+    font-size: 15px;
+}
+
+.attribution a {
+    color: hsl(300, 69%, 71%);
+    text-decoration: none;
+}
+
+i {
+    font-size: 30px;
+    --fa-border-padding: 10px;
+    --fa-border-radius: 70%;
+}
