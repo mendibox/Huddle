@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    padding: 53px 66px;
+    /*padding: 53px 66px;*/
     width: 10px;
 }
 
@@ -22,17 +22,11 @@ body {
 }
 
 .mockups {
-    border: 1px solid black;    
     padding: 26px 66px;
 }
 
 .mockups img {
     width: 100%;
-}
-
-.text {
-    border: 1px solid black;
-
 }
 
 .heading {
@@ -47,25 +41,24 @@ body {
     padding-right: 80px;
 }
 
-.register-button {
-    width: 180px;
+button {
+    width: 175px;
     height: 40px;
     background-color: white;
-    text-align: center;
-    border-radius: 50px;
-    margin-top: 35px;
+    color: hsl(257, 40%, 49%);
+    border: none;
+    border-radius: 30px;
 }
 
-.register-button a {
-    /*color: hsl(257, 40%, 49%);*/
-    border: 1px solid black;
-
+button:hover {
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: white;
 }
 
 footer {
-    border: 1px solid black;
-    display: flex;
-    justify-content: right;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
 }
 
 .attribution {
@@ -77,8 +70,23 @@ footer {
     text-decoration: none;
 }
 
-i {
-    font-size: 30px;
-    --fa-border-padding: 10px;
-    --fa-border-radius: 70%;
+
+.sm-icons {
+    text-align: right;
+    padding-right: 80px;
+}
+
+.sm-icons a {
+    margin: 0 7px;
+    --fa-border-padding: 0.5em;
+    --fa-border-radius: 100%;
+    --fa-border-width: 0.1em;
+    text-decoration: none;
+    color: white;
+}
+
+.sm-icons a:hover {
+    --fa-border-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+    color: hsl(300, 69%, 71%);
 }
